@@ -64,16 +64,37 @@
 * [🌺 Macchiato](https://t.me/addtheme/ctp_macchiato)
 * [🌿 Mocha](https://t.me/addtheme/ctp_mocha)
 
-1. Chose your flavour from the list above
+1. Choose your flavour from the list above
 2. Open the link with your Telegram client of choice
-4. Apply the theme
-5. Enjoy! 
+3. Apply the theme
+4. Enjoy!
 
-## 🐱 Development (for the desktop version)
+## Development
 
-- The desktop version uses Go to build files for all flavours. To build a flavour, run `go run main.go --color <flavour-name>`. This creates a desktop theme file inside `src/<flavour-name>/<flavour-name>_desktop`. Use `--accent` flag to change accent color: `--accent ctpRed`; `ctpGreen` - default.
-- You are supposed to change the colours inside the `build/template.go.tpl` file. 
-- Rebuild flavours after editing the template file. 
+Edit the files in `templates/` and regenerate `src/` with
+[Whiskers](https://github.com/catppuccin/whiskers) 2.3.0:
+
+```sh
+whiskers templates/ios.tera
+```
+
+Replace `ios` with the client you want to build, or run `just build` to regenerate
+all clients. Export installable files with Python 3.9 or newer:
+
+| Client | Export command | Output directory | File extension |
+| --- | --- | --- | --- |
+| iOS | `python3 scripts/export-ios.py` | `dist/ios/` | `.tgios-theme` |
+
+Each exporter creates all four flavors from the checked-in sources; it does not
+regenerate templates. Send the desired file as a document in Telegram, open it
+with the matching client, and apply the preview. Exports do not include wallpapers
+or update the published theme links above.
+
+Run the exporter and contrast tests with:
+
+```sh
+python3 -m unittest discover -s scripts -p 'test_*.py'
+```
 
 ## 💝 Thanks to
 
