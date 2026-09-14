@@ -84,6 +84,7 @@ all clients. Export installable files with Python 3.9 or newer:
 | Client | Export command | Output directory | File extension |
 | --- | --- | --- | --- |
 | iOS | `python3 scripts/export-ios.py` | `dist/ios/` | `.tgios-theme` |
+| Android | `python3 scripts/export-android.py` | `dist/android/` | `.attheme` |
 
 Each exporter creates all four flavors from the checked-in sources; it does not
 regenerate templates. Send the desired file as a document in Telegram, open it

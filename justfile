@@ -9,3 +9,6 @@ build:
 
 export-ios:
   python3 scripts/export-ios.py
+
+export-android:
+  python3 scripts/export-android.py

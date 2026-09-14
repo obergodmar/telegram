@@ -21,8 +21,8 @@ actionBarDefaultArchivedSelector: #{{ overlay2.hex }}
 actionBarDefaultArchivedTitle: #{{ text.hex }}
 actionBarDefaultIcon: #{{ subtext0.hex }}
 actionBarDefaultSearch: #{{ subtext0.hex }}
-actionBarDefaultSearchArchivedPlaceholder: #{{ crust | mod(opacity=0.5) | get(key="hex") }}
-actionBarDefaultSearchPlaceholder: #{{ crust | mod(opacity=0.5) | get(key="hex") }}
+actionBarDefaultSearchArchivedPlaceholder: #{{ text.hex }}
+actionBarDefaultSearchPlaceholder: #{{ text.hex }}
 actionBarDefaultSelector: #{{ overlay2.hex }}
 actionBarDefaultSubmenuBackground: #{{ base.hex }}
 actionBarDefaultSubmenuItem: #{{ text.hex }}
@@ -32,7 +32,7 @@ actionBarDefaultTitle: #{{ text.hex }}
 actionBarTabActiveText: #{{ text.hex }}
 actionBarTabLine: #{{ text.hex }}
 actionBarTabSelector: #{{ surface1.hex }}
-actionBarTabUnactiveText: #{{ overlay1.hex }}
+actionBarTabUnactiveText: #{{ subtext0.hex }}
 actionBarWhiteSelector: #{{ overlay2.hex }}
 avatar_actionBarIconBlue: #{{ subtext0.hex }}
 avatar_actionBarSelectorBlue: #{{ overlay2.hex }}
@@ -64,7 +64,7 @@ changephoneinfo_image2: #{{ blue.hex }}
 changephoneinfo_image: #{{ text.hex }}
 chat_addContact: #{{ mauve.hex }}
 chat_adminSelectedText: #{{ text.hex }}
-chat_adminText: #{{ text.hex }}
+chat_adminText: #{{ subtext0.hex }}
 chat_attachActiveTab: #{{ blue.hex }}
 chat_attachAudioBackground: #{{ red.hex }}
 chat_attachAudioIcon: #{{ base.hex }}
@@ -117,7 +117,7 @@ chat_emojiSearchBackground: #{{ surface0.hex }}
 chat_emojiSearchIcon: #{{ subtext0.hex }}
 chat_fieldOverlayText: #{{ subtext0.hex }}
 chat_gifSaveHintBackground: #000000CC
-chat_gifSaveHintText: #{{ base.hex }}
+chat_gifSaveHintText: #ffffff
 chat_goDownButton: #{{ base.hex }}
 chat_goDownButtonCounter: #{{ base.hex }}
 chat_goDownButtonCounterBackground: #{{ green.hex }}
@@ -171,15 +171,15 @@ chat_inPreviewInstantSelectedText: #{{ text.hex }}
 chat_inPreviewInstantText: #{{ text.hex }}
 chat_inPreviewLine: #{{ blue.hex }}
 chat_inReplyLine: #{{ rosewater.hex }}
-chat_inReplyMediaMessageSelectedText: #{{ overlay0.hex }}
-chat_inReplyMediaMessageText: #{{ overlay0.hex }}
-chat_inReplyMessageText: #{{ overlay0.hex }}
+chat_inReplyMediaMessageSelectedText: #{{ subtext0.hex }}
+chat_inReplyMediaMessageText: #{{ subtext0.hex }}
+chat_inReplyMessageText: #{{ subtext0.hex }}
 chat_inReplyNameText: #{{ rosewater.hex }}
 chat_inSentClock: #{{ overlay0.hex }}
 chat_inSentClockSelected: #{{ overlay0.hex }}
 chat_inSiteNameText: #{{ rosewater.hex }}
 chat_inTimeSelectedText: #{{ text.hex }}
-chat_inTimeText: #{{ overlay0.hex }}
+chat_inTimeText: #{{ subtext1.hex }}
 chat_inUpCall: #{{ red.hex }}
 chat_inVenueInfoSelectedText: #{{ text.hex }}
 chat_inVenueInfoText: #{{ text.hex }}
@@ -193,18 +193,18 @@ chat_inlineResultIcon: #{{ blue.hex }}
 chat_linkSelectBackground: #{{ blue.hex }}33
 chat_lockIcon: #{{ base.hex }}
 chat_mediaBroadcast: #{{ base.hex }}
-chat_mediaInfoText: #{{ base.hex }}
+chat_mediaInfoText: #ffffff
 chat_mediaLoaderPhoto: #00000066
-chat_mediaLoaderPhotoIcon: #{{ base.hex }}
-chat_mediaLoaderPhotoIconSelected: #{{ base.hex }}
+chat_mediaLoaderPhotoIcon: #ffffff
+chat_mediaLoaderPhotoIconSelected: #ffffff
 chat_mediaLoaderPhotoSelected: #0000007F
-chat_mediaMenu: #{{ base.hex }}
-chat_mediaProgress: #{{ base.hex }}
-chat_mediaSentCheck: #{{ base.hex }}
-chat_mediaSentClock: #{{ base.hex }}
+chat_mediaMenu: #ffffff
+chat_mediaProgress: #ffffff
+chat_mediaSentCheck: #ffffff
+chat_mediaSentClock: #ffffff
 chat_mediaTimeBackground: #00000066
-chat_mediaTimeText: #{{ base.hex }}
-chat_mediaViews: #{{ base.hex }}
+chat_mediaTimeText: #ffffff
+chat_mediaViews: #ffffff
 chat_messageLinkIn: #{{ rosewater.hex }}
 chat_messageLinkOut: #{{ rosewater.hex }}
 chat_messagePanelBackground: #{{ base.hex }}
@@ -219,7 +219,7 @@ chat_messagePanelText: #{{ text.hex }}
 chat_messagePanelVideoFrame: #{{ mauve.hex }}
 chat_messagePanelVoiceBackground: #{{ mauve.hex }}
 chat_messagePanelVoiceDelete: #{{ crust.hex }}
-chat_messagePanelVoiceDuration: #{{ overlay0.hex }}
+chat_messagePanelVoiceDuration: #{{ subtext0.hex }}
 chat_messagePanelVoicePressed: #{{ base.hex }}
 chat_messagePanelVoiceShadow: #0000000D
 chat_messageTextIn: #{{ text.hex }}
@@ -273,9 +273,9 @@ chat_outPreviewInstantSelectedText: #{{ text.hex }}
 chat_outPreviewInstantText: #{{ text.hex }}
 chat_outPreviewLine: #{{ blue.hex }}
 chat_outReplyLine: #{{ rosewater.hex }}
-chat_outReplyMediaMessageSelectedText: #{{ overlay0.hex }}
-chat_outReplyMediaMessageText: #{{ overlay0.hex }}
-chat_outReplyMessageText: #{{ overlay0.hex }}
+chat_outReplyMediaMessageSelectedText: #{{ subtext0.hex }}
+chat_outReplyMediaMessageText: #{{ subtext0.hex }}
+chat_outReplyMessageText: #{{ subtext0.hex }}
 chat_outReplyNameText: #{{ rosewater.hex }}
 chat_outSentCheck: #{{ overlay0.hex }}
 chat_outSentCheckRead: #{{ overlay0.hex }}
@@ -285,7 +285,7 @@ chat_outSentClock: #{{ overlay0.hex }}
 chat_outSentClockSelected: #{{ overlay0.hex }}
 chat_outSiteNameText: #{{ rosewater.hex }}
 chat_outTimeSelectedText: #{{ text.hex }}
-chat_outTimeText: #{{ overlay0.hex }}
+chat_outTimeText: #{{ subtext1.hex }}
 chat_outUpCall: #{{ green.hex }}
 chat_outVenueInfoSelectedText: #{{ text.hex }}
 chat_outVenueInfoText: #{{ text.hex }}
@@ -295,8 +295,8 @@ chat_outViewsSelected: #{{ text.hex }}
 chat_outVoiceSeekbar: #{{ overlay0.hex }}
 chat_outVoiceSeekbarFill: #{{ text.hex }}
 chat_outVoiceSeekbarSelected: #{{ overlay0.hex }}
-chat_previewDurationText: #{{ base.hex }}
-chat_previewGameText: #{{ base.hex }}
+chat_previewDurationText: #ffffff
+chat_previewGameText: #ffffff
 chat_recordTime: #{{ text.hex }}
 chat_recordVoiceCancel: #{{ overlay0.hex }}
 chat_recordedVoiceBackground: #{{ mauve.hex }}
@@ -313,7 +313,7 @@ chat_replyPanelName: #{{ rosewater.hex }}
 chat_reportSpam: #{{ maroon.hex }}
 chat_searchPanelIcons: #{{ overlay0.hex }}
 chat_searchPanelText: #{{ text.hex }}
-chat_secretChatStatusText: #{{ overlay0.hex }}
+chat_secretChatStatusText: #{{ subtext0.hex }}
 chat_secretTimeText: #{{ text.hex }}
 chat_secretTimerBackground: #{{ base.hex }}CC
 chat_secretTimerText: #{{ base.hex }}
@@ -439,16 +439,16 @@ dialogRedIcon: #{{ maroon.hex }}
 dialogRoundCheckBox: #{{ blue.hex }}
 dialogRoundCheckBoxCheck: #{{ base.hex }}
 dialogScrollGlow: #{{ mantle.hex }}
-dialogSearchBackground: #{{ subtext0.hex }}
-dialogSearchHint: #{{ crust.hex }}
-dialogSearchIcon: #{{ crust.hex }}
+dialogSearchBackground: #{{ surface0.hex }}
+dialogSearchHint: #{{ text.hex }}
+dialogSearchIcon: #{{ subtext0.hex }}
 dialogSearchText: #{{ text.hex }}
 dialogShadowLine: #00000012
 dialogTextBlack: #{{ text.hex }}
 dialogTextBlue2: #{{ blue.hex }}
 dialogTextBlue3: #{{ blue.hex }}
 dialogTextBlue4: #{{ blue.hex }}
-dialogTextBlue: #2F81e66f5CC9
+dialogTextBlue: #{{ blue.hex }}
 dialogTextGray2: #{{ subtext1.hex }}
 dialogTextGray3: #{{ subtext1.hex }}
 dialogTextGray4: #{{ subtext0.hex }}
@@ -479,7 +479,7 @@ files_folderIconBackground: #{{ surface1.hex }}
 files_iconText: #{{ base.hex }}
 graySection: #{{ surface1.hex }}
 groupcreate_cursor: #{{ rosewater.hex }}
-groupcreate_hintText: #{{ overlay0.hex }}
+groupcreate_hintText: #{{ subtext0.hex }}
 groupcreate_sectionShadow: #00000000
 groupcreate_sectionText: #{{ subtext0.hex }}
 groupcreate_spanBackground: #{{ surface1.hex }}
@@ -493,8 +493,8 @@ inappPlayerTitle: #{{ subtext0.hex }}
 key_chat_messagePanelVoiceLock: #A4A4A4
 key_chat_messagePanelVoiceLockBackground: #{{ base.hex }}
 key_chat_messagePanelVoiceLockShadow: #000000
-key_graySectionText: #7F8991
-key_player_progressCachedBackground: #E9EFF5
+key_graySectionText: #{{ text.hex }}
+key_player_progressCachedBackground: #{{ surface2.hex }}
 key_sheet_other: #C9CDD3
 key_sheet_scrollUp: #E1E4E8
 listSelectorSDK21: #0000000F
@@ -546,9 +546,9 @@ returnToCallBackground: #44A1E3
 returnToCallText: #{{ base.hex }}
 sessions_devicesImage: #969696
 sharedMedia_actionMode: #4687B3
-sharedMedia_linkPlaceholder: #F0F3F5
-sharedMedia_linkPlaceholderText: #B7BEC3
-sharedMedia_photoPlaceholder: #EDF3F7
+sharedMedia_linkPlaceholder: #{{ surface0.hex }}
+sharedMedia_linkPlaceholderText: #{{ text.hex }}
+sharedMedia_photoPlaceholder: #{{ surface0.hex }}
 sharedMedia_startStopLoadIcon: #36A2EE
 stickers_menu: #B6BDC5
 stickers_menuSelector: #0000000F
@@ -606,3 +606,35 @@ windowBackgroundWhiteRedText5: #{{ maroon.hex }}
 windowBackgroundWhiteRedText6: #{{ maroon.hex }}
 windowBackgroundWhiteRedText: #{{ maroon.hex }}
 windowBackgroundWhiteValueText: #{{ blue.hex }}
+text_RedRegular: #{{ maroon.hex }}
+text_RedBold: #{{ maroon.hex }}
+buttonNeutralText: #{{ text.hex }}
+dialogEmptyText: #{{ subtext0.hex }}
+glass_defaultText: #{{ text.hex }}
+glass_defaultIcon: #{{ subtext0.hex }}
+glass_targetMainTabs: #{{ base.hex }}
+glass_targetMainTopPanel: #{{ base.hex }}
+glass_tabSelected: #{{ lavender.hex }}
+glass_tabSelectedText: #{{ lavender.hex }}
+glass_tabUnselected: #{{ subtext0.hex }}
+telegram_color_text: #{{ blue.hex }}
+chat_outAdminText: #{{ subtext0.hex }}
+chat_outAdminSelectedText: #{{ text.hex }}
+chat_inReactionButtonBackground: #{{ blue.hex }}
+chat_outReactionButtonBackground: #{{ blue.hex }}
+chat_inReactionButtonText: #{{ blue.hex }}
+chat_outReactionButtonText: #{{ blue.hex }}
+chat_inReactionButtonTextSelected: #{{ base.hex }}
+chat_outReactionButtonTextSelected: #{{ base.hex }}
+chat_msgIvButtonDefaultIn: #{{ surface0.hex }}
+chat_msgIvButtonDefaultInPressed: #{{ surface1.hex }}
+chat_msgIvButtonDefaultInText: #{{ text.hex }}
+chat_msgIvButtonDefaultInlineIn: #{{ surface0.hex }}
+chat_msgIvButtonDefaultInlineInPressed: #{{ surface1.hex }}
+chat_msgIvButtonDefaultInlineInText: #{{ text.hex }}
+chat_msgIvButtonDefaultOut: #{{ surface0.hex }}
+chat_msgIvButtonDefaultOutPressed: #{{ surface1.hex }}
+chat_msgIvButtonDefaultOutText: #{{ text.hex }}
+chat_msgIvButtonDefaultInlineOut: #{{ surface0.hex }}
+chat_msgIvButtonDefaultInlineOutPressed: #{{ surface1.hex }}
+chat_msgIvButtonDefaultInlineOutText: #{{ text.hex }}
