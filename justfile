@@ -12,3 +12,6 @@ export-ios:
 
 export-android:
   python3 scripts/export-android.py
+
+export-desktop:
+  python3 scripts/export-desktop.py
