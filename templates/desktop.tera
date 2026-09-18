@@ -60,7 +60,7 @@ ctpOnAccent: {{ if(cond=flavor.dark, t="ctpCrust", f="#000000") }};
 
 windowActiveTextFg: ctpText // online blue: fallback for active text like online status
 windowBg: ctpBase // white: fallback for background
-windowBgActive: ctpOverlay2 // bright blue: fallback for blue filled active areas
+windowBgActive: ctpSurface0 // bright blue: fallback for blue filled active areas
 windowBgOver: ctpSurface1 // light gray: fallback for background with mouse over
 windowBgRipple: ctpSurface1 // darker gray: fallback for ripple effect
 windowBoldFg: ctpText // dark gray: fallback for bold text
@@ -510,8 +510,8 @@ reportSpamBg: windowBg // report spam panel background (like a non contact user 
 reportSpamFg: windowFg // report spam panel text (when you send a report from that panel)
 searchedBarBg: ctpSurface0 // search results bar background (in chats list, contacts box..)
 searchedBarFg: windowFg // search results bar text (in chats list, contacts box..)
-sideBarBadgeBg: ctpOverlay2 // filters side bar badge background
-sideBarBadgeBgMuted: ctpOverlay1 // filters side bar unimportant badge background
+sideBarBadgeBg: ctpAccent // filters side bar badge background
+sideBarBadgeBgMuted: ctpAccent // filters side bar unimportant badge background
 sideBarBg: ctpMantle // filters side bar background
 sideBarBgActive: ctpSurface0 // filters side bar active background
 sideBarBgRipple: ctpBase // filters side bar ripple effect
@@ -562,3 +562,13 @@ videoPlayIconBg: ctpCrustTransparent // other video play icon background (like w
 videoPlayIconFg: ctpRosewater // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
 youtubePlayIconBg: ctpAccent // youtube play icon background (when a link to a youtube video with a webpage preview is sent)
 youtubePlayIconFg: ctpOnAccent // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
+
+// Current controls and readable search highlights
+dialogsArchiveFg: ctpText
+dialogsArchiveFgOver: ctpText
+emojiSubIconFgActive: ctpText
+sideBarBadgeFg: ctpOnAccent
+searchedTextMatchBg: ctpYellow
+searchedTextMatchFg: ctpOnAccent
+searchedTextCurrentMatchBg: ctpPeach
+searchedTextCurrentMatchFg: ctpOnAccent
