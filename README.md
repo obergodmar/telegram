@@ -69,11 +69,18 @@
 4. Apply the theme
 5. Enjoy! 
 
-## 🐱 Development (for the desktop version)
+## Development
 
-- The desktop version uses Go to build files for all flavours. To build a flavour, run `go run main.go --color <flavour-name>`. This creates a desktop theme file inside `src/<flavour-name>/<flavour-name>_desktop`. Use `--accent` flag to change accent color: `--accent ctpRed`; `ctpGreen` - default.
-- You are supposed to change the colours inside the `build/template.go.tpl` file. 
-- Rebuild flavours after editing the template file. 
+Edit the templates in `templates/`, then regenerate `src/` with
+[Whiskers](https://github.com/catppuccin/whiskers) 2.3.0:
+
+```sh
+whiskers templates/ios.tera
+```
+
+Replace `ios` with `android`, `desktop`, or `macos` as needed. With
+[Just](https://github.com/casey/just) installed, `just build` regenerates all clients.
+Commit the updated templates together with their generated files in `src/`.
 
 ## 💝 Thanks to
 
