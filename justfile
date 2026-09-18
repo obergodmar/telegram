@@ -6,3 +6,12 @@ build:
   whiskers templates/desktop.tera
   whiskers templates/ios.tera
   whiskers templates/macos.tera
+
+export-ios:
+  python3 scripts/export-ios.py
+
+export-android:
+  python3 scripts/export-android.py
+
+export-desktop:
+  python3 scripts/export-desktop.py
