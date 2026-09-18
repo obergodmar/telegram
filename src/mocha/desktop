@@ -42,6 +42,7 @@ ctpTeal: #94e2d5;
 ctpText: #cdd6f4;
 ctpYellow: #f9e2af;
 ctpAccent: ctpGreen;
+ctpOnAccent: ctpCrust;
 
 // Theme variables
 
@@ -75,10 +76,10 @@ menuSubmenuArrowFg: ctpText // default popup menu submenu arrow icon (like in me
 activeButtonBg: ctpAccent // default active button background
 activeButtonBgOver: ctpAccent // default active button background with mouse over
 activeButtonBgRipple: ctpAccent // default active button ripple effect
-activeButtonFg: ctpCrust // default active button text
-activeButtonFgOver: ctpCrust // default active button text with mouse over
-activeButtonSecondaryFg: ctpMantle // default active button additional text (selected messages counter in forward / delete buttons)
-activeButtonSecondaryFgOver: ctpMantle // default active button additional text with mouse over
+activeButtonFg: ctpOnAccent // default active button text
+activeButtonFgOver: ctpOnAccent // default active button text with mouse over
+activeButtonSecondaryFg: ctpOnAccent // default active button additional text (selected messages counter in forward / delete buttons)
+activeButtonSecondaryFgOver: ctpOnAccent // default active button additional text with mouse over
 activeLineFg: ctpOverlay2 // default active line (like code input field bottom border when you log in and field is focused)
 activeLineFgError: ctpRed // default active line for error state (like code input field bottom border when you log in and you've entered incorrect code)
 attentionButtonBgOver: ctpSurface1Transparent // default attention button background with mouse over
@@ -91,7 +92,7 @@ boxTextFg: ctpText // box text
 boxTextFgError: ctpRed // rejecting box text (like when choosing username that is occupied)
 boxTextFgGood: ctpText // accepted box text (like when choosing username that is not occupied)
 boxTitleAdditionalFg: ctpSubtext0 // box title additional text (like in create group box when you see chosen members count)
-boxTitleCloseFg: cptText // settings close icon and box search cancel icon (like in contacts box)
+boxTitleCloseFg: ctpText // settings close icon and box search cancel icon (like in contacts box)
 boxTitleCloseFgOver: ctpText // settings close icon and box search cancel icon (like in contacts box) with mouse over
 boxTitleFg: ctpText // box title text
 cancelIconFg: ctpText // default for settings close icon and box search cancel icon
@@ -100,7 +101,7 @@ checkboxFg: ctpSubtext0 // default unchecked checkbox rounded rectangle (and als
 lightButtonBg: ctpSurface0 // default light button background (like buttons in boxes)
 lightButtonBgOver: ctpSurface0 // default light button background with mouse over
 lightButtonBgRipple: ctpSurface1 // default light button ripple effect
-lightButtonFg: ctpAccent // default light button text
+lightButtonFg: ctpText // default light button text
 lightButtonFgOver: lightButtonFg // default light button text with mouse over
 sliderBgActive: ctpSurface1 // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgInactive: ctpSurface0 // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
@@ -115,7 +116,7 @@ callArrowFg: ctpBlue // received phone call arrow (in calls list box)
 callArrowMissedFg: ctpRed // missed phone call arrow (in calls list box)
 callBarBg: ctpGreen // active phone call bar background
 callBarBgMuted: ctpRed // phone call bar with muted mic background
-callBarFg: ctpCrust // phone call bar text and icons
+callBarFg: ctpOnAccent // phone call bar text and icons
 callBarMuteRipple: ctpGreen // active phone call bar mute and hangup button ripple effect
 callBarUnmuteRipple: ctpRed // phone call bar with muted mic mute and hangup button ripple effect
 callBg: ctpBaseTransparent // phone call popup background
@@ -130,8 +131,8 @@ callHangupRipple: ctpPink // phone call popup hangup button ripple effect
 callIconActiveRipple: ctpBlue // phone call line busy cancel, muted mic and camera ripple effect
 callIconBg: ctpGreen // phone call mute mic and camera button background
 callIconBgActive: ctpBlue // phone call line busy cancel, muted mic and camera button background
-callIconFg: ctpCrust // phone call popup answer, hangup and mute mic icon
-callIconFgActive: ctpCrust // phone call line busy cancel, muted mic and camera icon
+callIconFg: ctpOnAccent // phone call popup answer, hangup and mute mic icon
+callIconFgActive: ctpOnAccent // phone call line busy cancel, muted mic and camera icon
 callMuteRipple: ctpRed // phone call popup mute mic ripple effect
 callNameFg: windowFg // phone call popup name text
 callStatusFg: windowSubTextFg // phone call popup status text
@@ -142,7 +143,7 @@ contactsBgOver: ctpSurface0 // contacts (and some other) box row background with
 contactsNameFg: windowFg // contacts (and some other) box row name text
 contactsStatusFg: windowFg // contacts (and some other) box row additional text (like last seen stamp)
 contactsStatusFgOnline: windowSubTextFg // contacts (and some other) box row active additional text (like online status)
-contactsStatusFgOver: ctpOverlay0 // contacts (and some other) box row additional text (like last seen stamp) with mouse over
+contactsStatusFgOver: ctpText // contacts (and some other) box row additional text (like last seen stamp) with mouse over
 dialogsBg: windowBg // chat list background
 dialogsBgActive: ctpSurface1 // chat list background for current (active) chat
 dialogsBgOver: ctpSurface0 // chat list background with mouse over
@@ -150,8 +151,8 @@ dialogsChatIconFg: windowFg // chat list group or channel icon
 dialogsChatIconFgActive: windowFgActive // chat list group or channel icon for current (active) chat
 dialogsChatIconFgOver: windowBoldFgOver // chat list group or channel icon with mouse over
 dialogsDateFg: windowSubTextFg // chat list date text
-dialogsDateFgActive: windowSubTextFg // chat list date text for current (active) chat
-dialogsDateFgOver: windowSubTextFg // chat list date text with mouse over
+dialogsDateFgActive: ctpText // chat list date text for current (active) chat
+dialogsDateFgOver: ctpText // chat list date text with mouse over
 dialogsDraftFg: windowFg // chat list draft label
 dialogsDraftFgActive: windowFg // chat list draft label for current (active) chat
 dialogsDraftFgOver: windowFg // chat list draft label with mouse over
@@ -184,15 +185,15 @@ dialogsUnreadBgMuted: ctpText // chat list unread badge background for muted cha
 dialogsUnreadBgMutedActive: ctpText // chat list unread badge background for muted chat for current (active) chat
 dialogsUnreadBgMutedOver: ctpText // chat list unread badge background for muted chat with mouse over
 dialogsUnreadBgOver: ctpAccent // chat list unread badge background for not muted chat with mouse over
-dialogsUnreadFg: ctpCrust // chat list unread badge text
-dialogsUnreadFgActive: ctpCrust // chat list unread badge text for current (active) chat
-dialogsUnreadFgOver: ctpCrust // chat list unread badge text with mouse over
+dialogsUnreadFg: ctpOnAccent // chat list unread badge text
+dialogsUnreadFgActive: ctpOnAccent // chat list unread badge text for current (active) chat
+dialogsUnreadFgOver: ctpOnAccent // chat list unread badge text with mouse over
 dialogsVerifiedIconBg: ctpAccent // chat list verified icon background
 dialogsVerifiedIconBgActive: ctpAccent // chat list verified icon background for current (active) chat
 dialogsVerifiedIconBgOver: ctpAccent // chat list verified icon background with mouse over
-dialogsVerifiedIconFg: ctpCrust // chat list verified icon check
-dialogsVerifiedIconFgActive: ctpCrust // chat list verified icon check for current (active) chat
-dialogsVerifiedIconFgOver: ctpCrust // chat list verified icon check with mouse over
+dialogsVerifiedIconFg: ctpOnAccent // chat list verified icon check
+dialogsVerifiedIconFgActive: ctpOnAccent // chat list verified icon check for current (active) chat
+dialogsVerifiedIconFgOver: ctpOnAccent // chat list verified icon check with mouse over
 emojiIconFg: windowFg // emoji category icon
 emojiIconFgActive: windowFg // active emoji category icon
 emojiPanBg: windowBg // emoji panel background
@@ -246,8 +247,8 @@ historyComposeButtonBgOver: ctpSurface0 // unblock / join channel / mute channel
 historyComposeButtonBgRipple: ctpSurface1 // unblock / join channel / mute channel button ripple effect
 historyComposeIconFg: menuIconFg // history compose area icon (like emoji, attach, bot command..)
 historyComposeIconFgOver: menuIconFgOver // history compose area icon with mouse over
-historyFileInIconFg: ctpCrust // inbox file without thumbnail (like audio file) download arrow icon
-historyFileInIconFgSelected: ctpCrust // inbox selected file without thumbnail (like audio file) download arrow icon
+historyFileInIconFg: ctpOnAccent // inbox file without thumbnail (like audio file) download arrow icon
+historyFileInIconFgSelected: ctpOnAccent // inbox selected file without thumbnail (like audio file) download arrow icon
 historyFileInRadialFg: windowFg // inbox file without thumbnail (like audio file) radial download animation line
 historyFileInRadialFgSelected: windowFg // inbox selected file without thumbnail (like audio file) radial download animation line
 historyFileNameInFg: windowFg // inbox media filename text
@@ -327,12 +328,12 @@ historyTextOutFgSelected: windowFg // outbox message selected text or text in a 
 historyToDownBg: ctpSurface1 // arrow button background (to scroll to the end of the viewed chat)
 historyToDownBgOver: ctpSurface2 // arrow button background with mouse over
 historyToDownBgRipple: ctpOverlay0 // arrow button ripple effect
-historyToDownFg: windowSubTextFg // arrow button icon
-historyToDownFgOver: menuIconFgOver // arrow button icon with mouse over
+historyToDownFg: ctpText // arrow button icon
+historyToDownFgOver: ctpText // arrow button icon with mouse over
 historyToDownShadow: ctpCrustTransparent // arrow button shadow
 historyUnreadBarBg: ctpSurface0 // new unread messages bar background
 historyUnreadBarBorder: shadowFg // new unread messages bar shadow
-historyUnreadBarFg: ctpOverlay2 // new unread messages bar text
+historyUnreadBarFg: ctpText // new unread messages bar text
 historyVideoMessageProgressFg: windowFg // radial playback progress in round video messages
 imageBg: ctpCrust // image background fallback (when photo size is less than minimum allowed)
 imageBgTransparent: windowBg // image background when displaying an image with opacity where no opacity is needed
@@ -354,7 +355,7 @@ introTitleFg: windowFg // login title text
 layerBg: ctpCrustTransparent // box and main menu background layer fade
 mainMenuBg: windowBg // main menu background
 mainMenuCloudBg: ctpSurface2 // main menu top cover saved messages /archive button background
-mainMenuCloudFg: activeButtonFg // main menu top cover saved messages /archive button icon
+mainMenuCloudFg: ctpText // main menu top cover saved messages /archive button icon
 mainMenuCoverBg: ctpSurface2 // main menu top cover background
 mainMenuCoverFg: windowFgActive // main menu top cover text
 mediaInFg: windowFg // inbox media message status text (like in file that is being downloaded)
@@ -411,10 +412,10 @@ msgFile2Bg: ctpGreen // green shared links / shared files without image square t
 msgFile2BgDark: ctpGreen // green shared files without image download circle background
 msgFile2BgOver: ctpGreen // green shared files without image download circle background with mouse over
 msgFile2BgSelected: ctpGreen // green shared files without image download circle background if file is selected
-msgFile3Bg: cptRed // red shared links / shared files without image square thumbnail
-msgFile3BgDark: cptRed // red shared files without image download circle background
-msgFile3BgOver: cptRed // red shared files without image download circle background with mouse over
-msgFile3BgSelected: cptRed // red shared files without image download circle background if file is selected
+msgFile3Bg: ctpRed // red shared links / shared files without image square thumbnail
+msgFile3BgDark: ctpRed // red shared files without image download circle background
+msgFile3BgOver: ctpRed // red shared files without image download circle background with mouse over
+msgFile3BgSelected: ctpRed // red shared files without image download circle background if file is selected
 msgFile4Bg: ctpYellow // yellow shared links / shared files without image square thumbnail
 msgFile4BgDark: ctpYellow // yellow shared files without image download circle background
 msgFile4BgOver: ctpYellow // yellow shared files without image download circle background with mouse over
@@ -470,7 +471,7 @@ msgWaveformOutInactiveSelected: msgWaveformInInactiveSelected // outbox selected
 notificationBg: windowBg // custom notification window background
 notificationSampleCloseFg: ctpAccent // custom notifications settings box small sample close button placeholder
 notificationSampleNameFg: windowFg // custom notifications settings box small sample name placeholder
-notificationSampleTextFg: windowSubtextFg // custom notifications settings box small sample text placeholder
+notificationSampleTextFg: windowSubTextFg // custom notifications settings box small sample text placeholder
 notificationSampleUserpicFg: ctpAccent // custom notifications settings box small sample userpic placeholder
 notificationsBoxMonitorFg: windowFg // custom notifications settings box monitor color
 notificationsBoxScreenBg: dialogsBgActive // custom notifications settings box monitor screen background
@@ -488,9 +489,9 @@ photoCropPointFg: ctpRosewaterTransparent // avatar crop box corner rectangles (
 placeholderFg: ctpSubtext0 // default input field placeholder when field is not focused (like in phone input field when you log in)
 placeholderFgActive: ctpSubtext1 // default input field placeholder when field is focused
 profileAdminStartFg: ctpAccent // group members list admin star icon
-profileStatusFgOver: windowSubtextFg // group members list in group profile user last seen text with mouse over
+profileStatusFgOver: windowSubTextFg // group members list in group profile user last seen text with mouse over
 profileVerifiedCheckBg: ctpAccent // profile verified check icon background
-profileVerifiedCheckFg: ctpCrust // profile verified check icon tick
+profileVerifiedCheckFg: ctpOnAccent // profile verified check icon tick
 radialBg: ctpCrustTransparent // default radial loader background (like in Media Viewer when loading a photo)
 radialFg: windowFgActive // default radial loader line (like in Media Viewer when loading a photo)
 reportSpamBg: windowBg // report spam panel background (like a non contact user writes your for the first time)
@@ -525,7 +526,7 @@ titleButtonCloseBg: titleButtonBg // custom window title close button background
 titleButtonCloseBgActive: titleButtonCloseBg // custom window title close button background when window is active (Windows only)
 titleButtonCloseBgActiveOver: ctpSurface2 // custom window title close button background with mouse over when window is active (Windows only)
 titleButtonCloseBgOver: ctpSurface2 // custom window title close button background with mouse over when window is inactive (Windows only)
-titleButtonCloseFg: ctpOverlay1 // custom window title close button icon when window is inactive (Windows only)
+titleButtonCloseFg: ctpText // custom window title close button icon when window is inactive (Windows only)
 titleButtonCloseFgActive: ctpText // custom window title close button icon when window is active (Windows only)
 titleButtonCloseFgActiveOver: ctpText // custom window title close button icon with mouse over when window is active (Windows only)
 titleButtonCloseFgOver: ctpText // custom window title close button icon with mouse over when window is inactive (Windows only)
@@ -543,9 +544,9 @@ topBarBg: ctpBase // top bar background (in chat view, media overview..)
 trayCounterBg: ctpGreen // tray icon counter background
 trayCounterBgMacInvert: ctpGreen // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
 trayCounterBgMute: ctpBlue // tray icon counter background if all unread messages are muted
-trayCounterFg: ctpCrust // tray icon counter text
-trayCounterFgMacInvert: ctpCrust // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
+trayCounterFg: ctpOnAccent // tray icon counter text
+trayCounterFgMacInvert: ctpOnAccent // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
 videoPlayIconBg: ctpCrustTransparent // other video play icon background (like when a link to a vimeo video with a webpage preview is sent)
 videoPlayIconFg: ctpRosewater // other video play icon arrow (like when a link to a vimeo video with a webpage preview is sent)
 youtubePlayIconBg: ctpAccent // youtube play icon background (when a link to a youtube video with a webpage preview is sent)
-youtubePlayIconFg: ctpCrust // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
+youtubePlayIconFg: ctpOnAccent // youtube play icon arrow (when a link to a youtube video with a webpage preview is sent)
