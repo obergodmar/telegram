@@ -402,3 +402,10 @@ chart_detailsArrow: #cad3f5
 chart_detailsView: #1e2030
 chart_rangeViewFrame: #494d64
 chart_rangeViewMarker: #cad3f5
+basedOn: night
+root_navBar_clearButtonBackground: #363a4f
+root_navBar_clearButtonForeground: #cad3f5
+chat_inputPanel_panelControl_v2: #cad3f5
+chat_inputPanel_inputPlaceholder_v2: #cad3f566
+chat_inputPanel_inputText_v2: #cad3f5
+chat_inputPanel_inputControl_v2: #cad3f566

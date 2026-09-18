@@ -58,7 +58,7 @@ root_searchBar_inputPlaceholderText: #{{ subtext1.hex }}
 root_searchBar_inputIcon: #{{ subtext1.hex }}
 root_searchBar_inputClearButton: #{{ subtext1.hex }}
 root_searchBar_separator: #{{ base.hex }}
-root_keyboard: dark
+root_keyboard: {{ if(cond=flavor.dark, t="dark", f="light") }}
 list_blocksBg: #{{ base.hex }}
 list_plainBg: #{{ base.hex }}
 list_primaryText: #{{ text.hex }}
@@ -372,7 +372,7 @@ chat_historyNav_badgeBg: #{{ green.hex }}
 chat_historyNav_badgeStroke: #{{ green.hex }}
 chat_historyNav_badgeText: #{{ text.hex }}
 actionSheet_dim: #{{ self::half(color=crust) }}
-actionSheet_bgType: dark
+actionSheet_bgType: {{ if(cond=flavor.dark, t="dark", f="light") }}
 actionSheet_opaqueItemBg: #{{ surface0.hex }}
 actionSheet_itemBg: #{{ surface0.hex }}CC
 actionSheet_opaqueItemHighlightedBg: #{{ surface0.hex }}
@@ -402,7 +402,7 @@ contextMenu_secondary: #{{ self::half(color=text) }}
 contextMenu_destructive: #{{ red.hex }}
 notification_bg: #{{ surface0.hex }}
 notification_primaryText: #{{ text.hex }}
-notification_expanded_bgType: dark
+notification_expanded_bgType: {{ if(cond=flavor.dark, t="dark", f="light") }}
 notification_expanded_navBar_background: #{{ surface0.hex }}
 notification_expanded_navBar_primaryText: #{{ text.hex }}
 notification_expanded_navBar_control: #{{ green.hex }}
@@ -416,3 +416,10 @@ chart_detailsArrow: #{{ text.hex }}
 chart_detailsView: #{{ mantle.hex }}
 chart_rangeViewFrame: #{{ surface1.hex }}
 chart_rangeViewMarker: #{{ text.hex }}
+basedOn: {{ if(cond=flavor.dark, t="night", f="classic") }}
+root_navBar_clearButtonBackground: #{{ surface0.hex }}
+root_navBar_clearButtonForeground: #{{ text.hex }}
+chat_inputPanel_panelControl_v2: #{{ text.hex }}
+chat_inputPanel_inputPlaceholder_v2: #{{ text.hex }}66
+chat_inputPanel_inputText_v2: #{{ text.hex }}
+chat_inputPanel_inputControl_v2: #{{ text.hex }}66

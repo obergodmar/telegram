@@ -44,7 +44,7 @@ root_searchBar_inputPlaceholderText: #5c5f77
 root_searchBar_inputIcon: #5c5f77
 root_searchBar_inputClearButton: #5c5f77
 root_searchBar_separator: #eff1f5
-root_keyboard: dark
+root_keyboard: light
 list_blocksBg: #eff1f5
 list_plainBg: #eff1f5
 list_primaryText: #4c4f69
@@ -358,7 +358,7 @@ chat_historyNav_badgeBg: #40a02b
 chat_historyNav_badgeStroke: #40a02b
 chat_historyNav_badgeText: #4c4f69
 actionSheet_dim: #dce0e880
-actionSheet_bgType: dark
+actionSheet_bgType: light
 actionSheet_opaqueItemBg: #ccd0da
 actionSheet_itemBg: #ccd0daCC
 actionSheet_opaqueItemHighlightedBg: #ccd0da
@@ -388,7 +388,7 @@ contextMenu_secondary: #4c4f6980
 contextMenu_destructive: #d20f39
 notification_bg: #ccd0da
 notification_primaryText: #4c4f69
-notification_expanded_bgType: dark
+notification_expanded_bgType: light
 notification_expanded_navBar_background: #ccd0da
 notification_expanded_navBar_primaryText: #4c4f69
 notification_expanded_navBar_control: #40a02b
@@ -402,3 +402,10 @@ chart_detailsArrow: #4c4f69
 chart_detailsView: #e6e9ef
 chart_rangeViewFrame: #bcc0cc
 chart_rangeViewMarker: #4c4f69
+basedOn: classic
+root_navBar_clearButtonBackground: #ccd0da
+root_navBar_clearButtonForeground: #4c4f69
+chat_inputPanel_panelControl_v2: #4c4f69
+chat_inputPanel_inputPlaceholder_v2: #4c4f6966
+chat_inputPanel_inputText_v2: #4c4f69
+chat_inputPanel_inputControl_v2: #4c4f6966
