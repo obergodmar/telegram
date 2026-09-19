@@ -44,7 +44,7 @@ class AndroidTests(unittest.TestCase):
         ]
         for source in sorted((ROOT / "src").glob("*/android")):
             with self.subTest(flavor=source.parent.name):
-                colors = dict(line.split(": ", 1) for line in source.read_text().splitlines())
+                colors = dict(line.split(": ", 1) for line in source.read_text().splitlines() if line.strip())
                 exported = MODULE.export(source.read_text()).splitlines()
                 self.assertEqual(len(exported), len(colors) - 3)
                 for fg, bg in pairs:
