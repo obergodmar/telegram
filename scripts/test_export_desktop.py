@@ -19,6 +19,19 @@ def contrast(foreground, background):
 
 
 class DesktopTests(unittest.TestCase):
+    def test_control_states(self):
+        # lib_ui defaultToggle/defaultRadio use windowBgActive for the active
+        # track/ring; defaultCheck uses overviewCheckFgActive for the checkmark.
+        for source in sorted((ROOT / "src").glob("*/desktop")):
+            with self.subTest(flavor=source.parent.name):
+                colors = MODULE.parse(source.read_text())
+                self.assertNotEqual(colors["windowBgActive"], colors["checkboxFg"])
+                self.assertGreaterEqual(contrast(colors["windowBgActive"], colors["windowBg"]), 3)
+                self.assertGreaterEqual(contrast(colors["checkboxFg"], colors["windowBg"]), 3)
+                self.assertGreaterEqual(contrast(colors["overviewCheckFgActive"], colors["windowBgActive"]), 4.5)
+                self.assertGreaterEqual(contrast(colors["windowFgActive"], colors["windowBgActive"]), 4.5)
+                self.assertEqual(colors["dialogsNameFgActive"], colors["windowFg"])
+
     def test_native_syntax_and_rgba(self):
         self.assertEqual(MODULE.export(
             "name: Example\nwallpaper: t.me/bg/example\n"
