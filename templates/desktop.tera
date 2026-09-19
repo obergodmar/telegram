@@ -195,9 +195,9 @@ dialogsTextFgServiceActive: windowFg // chat list group sender name text for cur
 dialogsTextFgServiceOver: windowFg // chat list group sender name text with mouse over
 dialogsUnreadBg: ctpAccent // chat list unread badge background for not muted chat
 dialogsUnreadBgActive: ctpAccent // chat list unread badge background for not muted chat for current (active) chat
-dialogsUnreadBgMuted: {{ if(cond=flavor.dark, t="ctpText", f="ctpSurface2") }} // chat list unread badge background for muted chat
-dialogsUnreadBgMutedActive: {{ if(cond=flavor.dark, t="ctpText", f="ctpSurface2") }} // chat list unread badge background for muted chat for current (active) chat
-dialogsUnreadBgMutedOver: {{ if(cond=flavor.dark, t="ctpText", f="ctpSurface2") }} // chat list unread badge background for muted chat with mouse over
+dialogsUnreadBgMuted: ctpOverlay2 // chat list unread badge background for muted chat
+dialogsUnreadBgMutedActive: ctpOverlay2 // chat list unread badge background for muted chat for current (active) chat
+dialogsUnreadBgMutedOver: ctpOverlay2 // chat list unread badge background for muted chat with mouse over
 dialogsUnreadBgOver: ctpAccent // chat list unread badge background for not muted chat with mouse over
 dialogsUnreadFg: ctpOnAccent // chat list unread badge text
 dialogsUnreadFgActive: ctpOnAccent // chat list unread badge text for current (active) chat
@@ -514,7 +514,7 @@ reportSpamFg: windowFg // report spam panel text (when you send a report from th
 searchedBarBg: ctpSurface0 // search results bar background (in chats list, contacts box..)
 searchedBarFg: windowFg // search results bar text (in chats list, contacts box..)
 sideBarBadgeBg: ctpAccent // filters side bar badge background
-sideBarBadgeBgMuted: ctpAccent // filters side bar unimportant badge background
+sideBarBadgeBgMuted: ctpOverlay2 // filters side bar unimportant badge background
 sideBarBg: ctpMantle // filters side bar background
 sideBarBgActive: ctpSurface0 // filters side bar active background
 sideBarBgRipple: ctpBase // filters side bar ripple effect
