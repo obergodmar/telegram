@@ -41,7 +41,7 @@ ctpSurface2Transparent: #5b6078cc;
 ctpTeal: #8bd5ca;
 ctpText: #cad3f5;
 ctpYellow: #eed49f;
-ctpAccent: ctpGreen;
+ctpAccent: ctpLavender;
 ctpControlBg: ctpAccent;
 ctpControlFg: ctpCrust;
 ctpOnAccent: ctpCrust;
@@ -111,15 +111,15 @@ toastBg: ctpCrustTransparent // toast notification background (like when you cli
 toastFg: windowFg // toast notification text (like when you click on your t.me link when editing your username)
 botKbBg: ctpSurface0 // bot keyboard button background
 botKbDownBg: ctpSurface1 // bot keyboard button ripple effect
-callAnswerBg: ctpGreen // phone call popup answer button background
-callAnswerBgOuter: ctpGreen // phone call popup answer button outer ripple effect
-callAnswerRipple: ctpGreen // phone call popup answer button ripple effect
+callAnswerBg: ctpLavender // phone call popup answer button background
+callAnswerBgOuter: ctpLavender // phone call popup answer button outer ripple effect
+callAnswerRipple: ctpLavender // phone call popup answer button ripple effect
 callArrowFg: ctpBlue // received phone call arrow (in calls list box)
 callArrowMissedFg: ctpRed // missed phone call arrow (in calls list box)
-callBarBg: ctpGreen // active phone call bar background
+callBarBg: ctpLavender // active phone call bar background
 callBarBgMuted: ctpRed // phone call bar with muted mic background
 callBarFg: ctpOnAccent // phone call bar text and icons
-callBarMuteRipple: ctpGreen // active phone call bar mute and hangup button ripple effect
+callBarMuteRipple: ctpLavender // active phone call bar mute and hangup button ripple effect
 callBarUnmuteRipple: ctpRed // phone call bar with muted mic mute and hangup button ripple effect
 callBg: ctpBaseTransparent // phone call popup background
 callBgButton: ctpMantleTransparent // phone call window control buttons bg
@@ -131,7 +131,7 @@ callFingerprintBg: ctpCrustTransparent // phone call popup emoji fingerprint bac
 callHangupBg: ctpRed // phone call popup hangup button background
 callHangupRipple: ctpPink // phone call popup hangup button ripple effect
 callIconActiveRipple: ctpBlue // phone call line busy cancel, muted mic and camera ripple effect
-callIconBg: ctpGreen // phone call mute mic and camera button background
+callIconBg: ctpLavender // phone call mute mic and camera button background
 callIconBgActive: ctpBlue // phone call line busy cancel, muted mic and camera button background
 callIconFg: ctpOnAccent // phone call popup answer, hangup and mute mic icon
 callIconFgActive: ctpOnAccent // phone call line busy cancel, muted mic and camera icon
@@ -278,10 +278,10 @@ historyPeer1NameFg: ctpRed // red group member name
 historyPeer1NameFgSelected: ctpRed // red group member name in a selected message
 historyPeer1UserpicBg2: ctpRed // the second red userpic background
 historyPeer1UserpicBg: ctpRed // red userpic background
-historyPeer2NameFg: ctpGreen // green group member name
-historyPeer2NameFgSelected: ctpGreen // green group member name in a selected message
-historyPeer2UserpicBg2: ctpGreen // the second green userpic background
-historyPeer2UserpicBg: ctpGreen // green userpic background
+historyPeer2NameFg: ctpLavender // green group member name
+historyPeer2NameFgSelected: ctpLavender // green group member name in a selected message
+historyPeer2UserpicBg2: ctpLavender // the second green userpic background
+historyPeer2UserpicBg: ctpLavender // green userpic background
 historyPeer3NameFg: ctpYellow // yellow group member name
 historyPeer3NameFgSelected: ctpYellow // yellow group member name in a selected message
 historyPeer3UserpicBg2: ctpYellow // the second yellow userpic background (actually unused)
@@ -376,7 +376,7 @@ mediaviewControlFg: windowFg // controls icon (like next photo / previous photo)
 mediaviewFileBg: windowBg // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
 mediaviewFileBlueCornerFg: ctpBlue // blue file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .dmg)
 mediaviewFileExtFg: activeButtonFg // file extension text in file thumbnail placeholder in file rectangle
-mediaviewFileGreenCornerFg: ctpGreen // green file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .exe)
+mediaviewFileGreenCornerFg: ctpLavender // green file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .exe)
 mediaviewFileNameFg: windowFg // file name in file rectangle
 mediaviewFileRedCornerFg: ctpRed // red file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .pdf)
 mediaviewFileSizeFg: windowSubTextFg // file size text in file rectangle
@@ -410,10 +410,10 @@ msgFile1Bg: ctpBlue // blue shared links / files without image square thumbnail
 msgFile1BgDark: ctpBlue // blue shared files without image download circle background
 msgFile1BgOver: ctpBlue // blue shared files without image download circle background with mouse over
 msgFile1BgSelected: ctpBlue // blue shared files without image download circle background if file is selected
-msgFile2Bg: ctpGreen // green shared links / shared files without image square thumbnail
-msgFile2BgDark: ctpGreen // green shared files without image download circle background
-msgFile2BgOver: ctpGreen // green shared files without image download circle background with mouse over
-msgFile2BgSelected: ctpGreen // green shared files without image download circle background if file is selected
+msgFile2Bg: ctpLavender // green shared links / shared files without image square thumbnail
+msgFile2BgDark: ctpLavender // green shared files without image download circle background
+msgFile2BgOver: ctpLavender // green shared files without image download circle background with mouse over
+msgFile2BgSelected: ctpLavender // green shared files without image download circle background if file is selected
 msgFile3Bg: ctpRed // red shared links / shared files without image square thumbnail
 msgFile3BgDark: ctpRed // red shared files without image download circle background
 msgFile3BgOver: ctpRed // red shared files without image download circle background with mouse over
@@ -544,8 +544,8 @@ tooltipBg: ctpSurface0 // tooltip background (like when you put mouse over the m
 tooltipBorderFg: ctpSurface1 // tooltip border
 tooltipFg: ctpSubtext1 // tooltip text
 topBarBg: ctpBase // top bar background (in chat view, media overview..)
-trayCounterBg: ctpGreen // tray icon counter background
-trayCounterBgMacInvert: ctpGreen // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
+trayCounterBg: ctpLavender // tray icon counter background
+trayCounterBgMacInvert: ctpLavender // tray icon counter background when tray icon is pressed or when dark theme of macOS is used (macOS only)
 trayCounterBgMute: ctpBlue // tray icon counter background if all unread messages are muted
 trayCounterFg: ctpOnAccent // tray icon counter text
 trayCounterFgMacInvert: ctpOnAccent // tray icon counter text when tray icon is pressed or when dark theme of macOS is used (macOS only)
