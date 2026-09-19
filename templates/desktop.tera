@@ -575,3 +575,12 @@ searchedTextMatchBg: ctpYellow
 searchedTextMatchFg: ctpOnAccent
 searchedTextCurrentMatchBg: ctpPeach
 searchedTextCurrentMatchFg: ctpOnAccent
+
+botKbSuccessBg: #{{ lavender.hex }}cc;
+botKbInlineSuccessBg: #{{ lavender.hex }}b3;
+paymentsTipActive: #{{ lavender.hex }};
+settingsIconBg2: #{{ lavender.hex }};
+premiumIconBg3: #{{ lavender.hex }};
+statisticsChartLineGreen: #{{ lavender.hex }};
+statisticsChartLineLightgreen: #{{ mauve.hex }};
+rankAdminFg: #{{ lavender.hex }};

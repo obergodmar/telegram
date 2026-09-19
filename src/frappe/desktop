@@ -563,3 +563,12 @@ searchedTextMatchBg: ctpYellow
 searchedTextMatchFg: ctpOnAccent
 searchedTextCurrentMatchBg: ctpPeach
 searchedTextCurrentMatchFg: ctpOnAccent
+
+botKbSuccessBg: #babbf1cc;
+botKbInlineSuccessBg: #babbf1b3;
+paymentsTipActive: #babbf1;
+settingsIconBg2: #babbf1;
+premiumIconBg3: #babbf1;
+statisticsChartLineGreen: #babbf1;
+statisticsChartLineLightgreen: #ca9ee6;
+rankAdminFg: #babbf1;
