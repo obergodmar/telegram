@@ -41,7 +41,7 @@ avatar_backgroundArchived: #{{ overlay1.hex }}
 avatar_backgroundArchivedHidden: #{{ overlay1.hex }}
 avatar_backgroundBlue: #{{ blue.hex }}
 avatar_backgroundCyan: #{{ teal.hex }}
-avatar_backgroundGreen: #{{ green.hex }}
+avatar_backgroundGreen: #{{ lavender.hex }}
 avatar_backgroundGroupCreateSpanBlue: #{{ rosewater.hex }}
 avatar_backgroundInProfileBlue: #dc2286
 avatar_backgroundOrange: #{{ peach.hex }}
@@ -51,14 +51,14 @@ avatar_backgroundSaved: #{{ mauve.hex }}
 avatar_backgroundViolet: #{{ mauve.hex }}
 avatar_nameInMessageBlue: #{{ blue.hex }}
 avatar_nameInMessageCyan: #{{ teal.hex }}
-avatar_nameInMessageGreen: #{{ green.hex }}
+avatar_nameInMessageGreen: #{{ lavender.hex }}
 avatar_nameInMessageOrange: #{{ peach.hex }}
 avatar_nameInMessagePink: #{{ pink.hex }}
 avatar_nameInMessageRed: #{{ red.hex }}
 avatar_nameInMessageViolet: #{{ mauve.hex }}
 avatar_subtitleInProfileBlue: #{{ overlay1.hex }}
 avatar_text: #{{ base.hex }}
-calls_callReceivedGreenIcon: #{{ green.hex }}
+calls_callReceivedGreenIcon: #{{ lavender.hex }}
 calls_callReceivedRedIcon: #{{ red.hex }}
 changephoneinfo_image2: #{{ blue.hex }}
 changephoneinfo_image: #{{ text.hex }}
@@ -77,7 +77,7 @@ chat_attachFileBackground: #{{ teal.hex }}
 chat_attachFileIcon: #{{ base.hex }}
 chat_attachGalleryBackground: #{{ blue.hex }}
 chat_attachGalleryIcon: #{{ base.hex }}
-chat_attachLocationBackground: #{{ green.hex }}
+chat_attachLocationBackground: #{{ lavender.hex }}
 chat_attachLocationIcon: #{{ base.hex }}
 chat_attachMediaBanBackground: #{{ overlay2.hex }}
 chat_attachMediaBanText: #{{ base.hex }}
@@ -120,7 +120,7 @@ chat_gifSaveHintBackground: #000000CC
 chat_gifSaveHintText: #ffffff
 chat_goDownButton: #{{ base.hex }}
 chat_goDownButtonCounter: #{{ base.hex }}
-chat_goDownButtonCounterBackground: #{{ green.hex }}
+chat_goDownButtonCounterBackground: #{{ lavender.hex }}
 chat_goDownButtonIcon: #{{ subtext0.hex }}
 chat_goDownButtonShadow: #000000
 chat_inAudioCacheSeekbar: #{{ base | mod(opacity=0.25) | get(key="hex") }}
@@ -137,12 +137,12 @@ chat_inAudioTitleText: #{{ blue.hex }}
 chat_inBubble: #{{ base.hex }}
 chat_inBubbleSelected: #{{ surface0.hex }}
 chat_inBubbleShadow: #00000000
-chat_inContactBackground: #{{ green.hex }}
+chat_inContactBackground: #{{ lavender.hex }}
 chat_inContactIcon: #{{ base.hex }}
-chat_inContactNameText: #{{ green.hex }}
+chat_inContactNameText: #{{ lavender.hex }}
 chat_inContactPhoneSelectedText: #{{ text.hex }}
 chat_inContactPhoneText: #{{ subtext0.hex }}
-chat_inDownCall: #{{ green.hex }}
+chat_inDownCall: #{{ lavender.hex }}
 chat_inFileBackground: #{{ teal.hex }}
 chat_inFileBackgroundSelected: #{{ teal.hex }}
 chat_inFileIcon: #{{ base.hex }}
@@ -161,7 +161,7 @@ chat_inLoaderPhotoIcon: #{{ base.hex }}
 chat_inLoaderPhotoIconSelected: #{{ base.hex }}
 chat_inLoaderPhotoSelected: #{{ text.hex }}
 chat_inLoaderSelected: #{{ text.hex }}
-chat_inLocationBackground: #{{ green.hex }}
+chat_inLocationBackground: #{{ lavender.hex }}
 chat_inLocationIcon: #{{ base.hex }}
 chat_inMediaIcon: #{{ base.hex }}
 chat_inMediaIconSelected: #{{ base.hex }}
@@ -236,13 +236,13 @@ chat_outAudioSeekbarFill: #{{ rosewater.hex }}
 chat_outAudioSeekbarSelected: #{{ overlay0.hex }}
 chat_outAudioSelectedProgress: #{{ rosewater.hex }}
 chat_outAudioTitleText: #{{ blue.hex }}
-chat_outBroadcast: #{{ green.hex }}
+chat_outBroadcast: #{{ lavender.hex }}
 chat_outBubble: #{{ mantle.hex }}
 chat_outBubbleSelected: #{{ surface0.hex }}
 chat_outBubbleShadow: #00000000
-chat_outContactBackground: #{{ green.hex }}
+chat_outContactBackground: #{{ lavender.hex }}
 chat_outContactIcon: #{{ base.hex }}
-chat_outContactNameText: #{{ green.hex }}
+chat_outContactNameText: #{{ lavender.hex }}
 chat_outContactPhoneSelectedText: #{{ text.hex }}
 chat_outContactPhoneText: #{{ subtext0.hex }}
 chat_outFileBackground: #{{ teal.hex }}
@@ -263,7 +263,7 @@ chat_outLoaderPhotoIcon: #{{ base.hex }}
 chat_outLoaderPhotoIconSelected: #{{ base.hex }}
 chat_outLoaderPhotoSelected: #{{ text.hex }}
 chat_outLoaderSelected: #{{ text.hex }}
-chat_outLocationBackground: #{{ green.hex }}
+chat_outLocationBackground: #{{ lavender.hex }}
 chat_outLocationIcon: #{{ base.hex }}
 chat_outMediaIcon: #{{ base.hex }}
 chat_outMediaIconSelected: #{{ base.hex }}
@@ -286,7 +286,7 @@ chat_outSentClockSelected: #{{ overlay0.hex }}
 chat_outSiteNameText: #{{ rosewater.hex }}
 chat_outTimeSelectedText: #{{ text.hex }}
 chat_outTimeText: #{{ subtext1.hex }}
-chat_outUpCall: #{{ green.hex }}
+chat_outUpCall: #{{ lavender.hex }}
 chat_outVenueInfoSelectedText: #{{ text.hex }}
 chat_outVenueInfoText: #{{ text.hex }}
 chat_outViaBotNameText: #{{ blue.hex }}
@@ -326,7 +326,7 @@ chat_serviceText: #{{ base.hex }}
 chat_serviceBackground: #{{ lavender.hex }}
 chat_shareBackground: #{{ overlay0.hex }}66
 chat_shareBackgroundSelected: #{{ overlay0.hex }}99
-chat_status: #{{ green.hex }}
+chat_status: #{{ lavender.hex }}
 chat_stickerNameText: #{{ base.hex }}
 chat_stickerReplyLine: #{{ base.hex }}
 chat_stickerReplyMessageText: #{{ base.hex }}
@@ -342,13 +342,13 @@ chat_topPanelTitle: #{{ subtext0.hex }}
 chat_unreadMessagesStartArrowIcon: #{{ base.hex }}
 chat_unreadMessagesStartBackground: #{{ mauve.hex }}
 chat_unreadMessagesStartText: #{{ base.hex }}
-chats_actionBackground: #{{ green.hex }}
+chats_actionBackground: #{{ lavender.hex }}
 chats_actionIcon: #{{ base.hex }}
 chats_actionMessage: #{{ subtext0.hex }}
 chats_actionPressedBackground: #{{ pink.hex }}
-chats_actionUnreadBackground: #{{ green.hex }}
+chats_actionUnreadBackground: #{{ lavender.hex }}
 chats_actionUnreadIcon: #{{ base.hex }}
-chats_actionUnreadPressedBackground: #{{ green.hex }}
+chats_actionUnreadPressedBackground: #{{ lavender.hex }}
 chats_archiveBackground: #{{ surface0.hex }}
 chats_archiveIcon: #{{ text.hex }}
 chats_archivePinBackground: #{{ surface2.hex }}
@@ -378,36 +378,36 @@ chats_nameMessage: #{{ blue.hex }}
 chats_nameMessageArchived: #{{ blue.hex }}
 chats_nameMessageArchived_threeLines: #{{ blue.hex }}
 chats_nameMessage_threeLines: #{{ blue.hex }}
-chats_onlineCircle: #{{ green.hex }}
+chats_onlineCircle: #{{ lavender.hex }}
 chats_pinnedIcon: #{{ subtext0.hex }}
 chats_pinnedOverlay: #{{ mantle.hex }}
-chats_secretIcon: #{{ green.hex }}
-chats_secretName: #{{ green.hex }}
-chats_sentCheck: #{{ green.hex }}
-chats_sentClock: #{{ green.hex }}
+chats_secretIcon: #{{ lavender.hex }}
+chats_secretName: #{{ lavender.hex }}
+chats_sentCheck: #{{ lavender.hex }}
+chats_sentClock: #{{ lavender.hex }}
 chats_sentError: #{{ maroon.hex }}
 chats_sentErrorIcon: #{{ base.hex }}
-chats_sentReadCheck: #{{ green.hex }}
+chats_sentReadCheck: #{{ lavender.hex }}
 chats_tabletSelectedOverlay: #0000000F
-chats_unreadCounter: #{{ green.hex }}
+chats_unreadCounter: #{{ lavender.hex }}
 chats_unreadCounterMuted: #{{ overlay0.hex }}
 chats_unreadCounterText: #{{ base.hex }}
 chats_verifiedBackground: #{{ blue.hex }}
 chats_verifiedCheck: #{{ base.hex }}
-checkbox: #{{ green.hex }}
+checkbox: #{{ lavender.hex }}
 checkboxCheck: #{{ base.hex }}
 checkboxDisabled: #{{ overlay0.hex }}
 checkboxSquareBackground: #{{ blue.hex }}
 checkboxSquareCheck: #{{ base.hex }}
 checkboxSquareDisabled: #{{ overlay0.hex }}
 checkboxSquareUnchecked: #{{ subtext0.hex }}
-contacts_inviteBackground: #{{ green.hex }}
+contacts_inviteBackground: #{{ lavender.hex }}
 contacts_inviteText: #{{ base.hex }}
 contextProgressInner1: #{{ blue.hex }}
 contextProgressInner2: #{{ blue.hex }}
 contextProgressInner3: #{{ overlay0.hex }}
 contextProgressInner4: #{{ overlay0.hex }}
-contextProgressOuter1: #{{ green.hex }}
+contextProgressOuter1: #{{ lavender.hex }}
 contextProgressOuter2: #{{ base.hex }}
 contextProgressOuter3: #{{ base.hex }}
 contextProgressOuter4: #{{ text.hex }}
@@ -541,7 +541,7 @@ profile_verifiedBackground: #{{ blue.hex }}
 profile_verifiedCheck: #{{ base.hex }}
 progressCircle: #527DA3
 radioBackground: #B3B3B3
-radioBackgroundChecked: #37A9F0
+radioBackgroundChecked: #{{ lavender.hex }}
 returnToCallBackground: #44A1E3
 returnToCallText: #{{ base.hex }}
 sessions_devicesImage: #969696
@@ -553,15 +553,15 @@ sharedMedia_startStopLoadIcon: #36A2EE
 stickers_menu: #B6BDC5
 stickers_menuSelector: #0000000F
 switch2Track: #{{ overlay0.hex }}
-switch2TrackChecked: #{{ green.hex }}
+switch2TrackChecked: #{{ lavender.hex }}
 switchTrack: #{{ overlay0.hex }}
 switchTrackBlue: #{{ overlay0.hex }}
-switchTrackBlueChecked: #{{ green.hex }}
+switchTrackBlueChecked: #{{ lavender.hex }}
 switchTrackBlueSelector: #404A5317
 switchTrackBlueSelectorChecked: #02478121
 switchTrackBlueThumb: #{{ base.hex }}
 switchTrackBlueThumbChecked: #{{ base.hex }}
-switchTrackChecked: #{{ green.hex }}
+switchTrackChecked: #{{ lavender.hex }}
 undo_background: #272F38EA
 undo_cancelColor: #85CAFF
 undo_infoColor: #{{ base.hex }}
@@ -592,8 +592,8 @@ windowBackgroundWhiteGrayText6: #{{ subtext0.hex }}
 windowBackgroundWhiteGrayText7: #{{ subtext0.hex }}
 windowBackgroundWhiteGrayText8: #{{ subtext0.hex }}
 windowBackgroundWhiteGrayText: #{{ subtext0.hex }}
-windowBackgroundWhiteGreenText2: #{{ green.hex }}
-windowBackgroundWhiteGreenText: #{{ green.hex }}
+windowBackgroundWhiteGreenText2: #{{ lavender.hex }}
+windowBackgroundWhiteGreenText: #{{ lavender.hex }}
 windowBackgroundWhiteHintText: #98A0A7
 windowBackgroundWhiteInputField: #F2F4F5
 windowBackgroundWhiteInputFieldActivated: #{{ blue.hex }}
