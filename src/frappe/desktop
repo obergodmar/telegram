@@ -42,19 +42,21 @@ ctpTeal: #81c8be;
 ctpText: #c6d0f5;
 ctpYellow: #e5c890;
 ctpAccent: ctpGreen;
+ctpControlBg: ctpAccent;
+ctpControlFg: ctpCrust;
 ctpOnAccent: ctpCrust;
 
 // Theme variables
 
 windowActiveTextFg: ctpText // online blue: fallback for active text like online status
 windowBg: ctpBase // white: fallback for background
-windowBgActive: ctpSurface0 // bright blue: fallback for blue filled active areas
+windowBgActive: ctpControlBg // bright blue: fallback for blue filled active areas
 windowBgOver: ctpSurface1 // light gray: fallback for background with mouse over
 windowBgRipple: ctpSurface1 // darker gray: fallback for ripple effect
 windowBoldFg: ctpText // dark gray: fallback for bold text
 windowBoldFgOver: ctpText // dark gray: fallback for bold text with mouse over
 windowFg: ctpText // black: fallback for text
-windowFgActive: ctpText // white: fallback for text on active areas
+windowFgActive: ctpControlFg // white: fallback for text on active areas
 windowFgOver: ctpText // black: fallback for text with mouse over
 windowShadowFg: ctpBase // black: fallback for shadow
 windowShadowFgFallback: ctpBase // gray: fallback for shadow without opacity
@@ -106,7 +108,7 @@ lightButtonFgOver: lightButtonFg // default light button text with mouse over
 sliderBgActive: ctpSurface1 // default slider active bar (like in Settings when you choose interface scale or custom notifications count)
 sliderBgInactive: ctpSurface0 // default slider not active bar (like in Settings when you choose interface scale or custom notifications count)
 toastBg: ctpCrustTransparent // toast notification background (like when you click on your t.me link when editing your username)
-toastFg: windowFgActive // toast notification text (like when you click on your t.me link when editing your username)
+toastFg: windowFg // toast notification text (like when you click on your t.me link when editing your username)
 botKbBg: ctpSurface0 // bot keyboard button background
 botKbDownBg: ctpSurface1 // bot keyboard button ripple effect
 callAnswerBg: ctpGreen // phone call popup answer button background
@@ -148,7 +150,7 @@ dialogsBg: windowBg // chat list background
 dialogsBgActive: ctpSurface1 // chat list background for current (active) chat
 dialogsBgOver: ctpSurface0 // chat list background with mouse over
 dialogsChatIconFg: windowFg // chat list group or channel icon
-dialogsChatIconFgActive: windowFgActive // chat list group or channel icon for current (active) chat
+dialogsChatIconFgActive: windowFg // chat list group or channel icon for current (active) chat
 dialogsChatIconFgOver: windowBoldFgOver // chat list group or channel icon with mouse over
 dialogsDateFg: windowSubTextFg // chat list date text
 dialogsDateFgActive: ctpText // chat list date text for current (active) chat
@@ -157,11 +159,11 @@ dialogsDraftFg: windowFg // chat list draft label
 dialogsDraftFgActive: windowFg // chat list draft label for current (active) chat
 dialogsDraftFgOver: windowFg // chat list draft label with mouse over
 dialogsForwardBg: ctpSurface1 // forwarding panel background (when forwarding messages in the smallest window size)
-dialogsForwardFg: windowFgActive // forwarding panel text (when forwarding messages in the smallest window size)
+dialogsForwardFg: windowFg // forwarding panel text (when forwarding messages in the smallest window size)
 dialogsMenuIconFg: menuIconFg // main menu and lock telegram icon
 dialogsMenuIconFgOver: menuIconFgOver // main menu and lock telegram icon with mouse over
 dialogsNameFg: windowFg // chat list name text
-dialogsNameFgActive: windowFgActive // chat list name text for current (active) chat
+dialogsNameFgActive: windowFg // chat list name text for current (active) chat
 dialogsNameFgOver: windowBoldFgOver // chat list name text with mouse over
 dialogsOnlineBadgeFg: windowFg // chat list online status
 dialogsOnlineBadgeFgActive: windowFg // chat list online status for current (active) chat
@@ -174,7 +176,7 @@ dialogsSentIconFg: ctpAccent // chat list sent message tick / double tick icon
 dialogsSentIconFgActive: ctpAccent // chat list sent message tick / double tick icon for current (active) chat
 dialogsSentIconFgOver: ctpAccent // chat list sent message tick / double tick icon with mouse over
 dialogsTextFg: windowFg // chat list message text
-dialogsTextFgActive: windowFgActive // chat list message text for current (active) chat
+dialogsTextFgActive: windowFg // chat list message text for current (active) chat
 dialogsTextFgOver: windowFg // chat list message text with mouse over
 dialogsTextFgService: windowFg // chat list group sender name text (or media message type text)
 dialogsTextFgServiceActive: windowFg // chat list group sender name text for current (active) chat
@@ -264,8 +266,8 @@ historyFileThumbIconFgSelected: windowFg // selected file with thumbnail (or pho
 historyFileThumbRadialFg: windowFg // file with thumbnail (or photo / video) radial download animation line
 historyFileThumbRadialFgSelected: windowFg // selected file with thumbnail (or photo / video) radial download animation line
 historyForwardChooseBg: ctpCrustTransparent // forwarding messages in a large window size "choose recipient" background
-historyForwardChooseFg: windowFgActive // forwarding messages in a large window size "choose recipient" text
-historyIconFgInverted: windowFgActive // media message tick / double tick icon (like in sent photo)
+historyForwardChooseFg: windowFg // forwarding messages in a large window size "choose recipient" text
+historyIconFgInverted: windowFg // media message tick / double tick icon (like in sent photo)
 historyLinkInFg: ctpBlue // inbox message link
 historyLinkInFgSelected: ctpSky // inbox message link in a selected text or message
 historyLinkOutFg: historyLinkInFg // outbox message link
@@ -357,7 +359,7 @@ mainMenuBg: windowBg // main menu background
 mainMenuCloudBg: ctpSurface2 // main menu top cover saved messages /archive button background
 mainMenuCloudFg: ctpText // main menu top cover saved messages /archive button icon
 mainMenuCoverBg: ctpSurface2 // main menu top cover background
-mainMenuCoverFg: windowFgActive // main menu top cover text
+mainMenuCoverFg: windowFg // main menu top cover text
 mediaInFg: windowFg // inbox media message status text (like in file that is being downloaded)
 mediaInFgSelected: windowFg // inbox selected media message status text (like in file that is being downloaded)
 mediaOutFg: windowFg // outbox media message status text (like in file that is being downloaded)
@@ -368,9 +370,9 @@ mediaPlayerDisabledFg: windowSubTextFg // audio file player loading progress (wh
 mediaPlayerInactiveFg: sliderBgInactive // audio file player playback progress upcoming (not played yet) part with mouse over
 mediaviewBg: ctpBaseTransparent // Media Viewer background
 mediaviewCaptionBg: ctpCrustTransparent // caption text background (when viewing photo with caption)
-mediaviewCaptionFg: windowFgActive // caption text
+mediaviewCaptionFg: windowFg // caption text
 mediaviewControlBg: ctpCrustTransparent // controls background (like next photo / previous photo)
-mediaviewControlFg: windowFgActive // controls icon (like next photo / previous photo)
+mediaviewControlFg: windowFg // controls icon (like next photo / previous photo)
 mediaviewFileBg: windowBg // file rectangle background (when you view a png file in Media Viewer and go to a previous, not loaded yet, file)
 mediaviewFileBlueCornerFg: ctpBlue // blue file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .dmg)
 mediaviewFileExtFg: activeButtonFg // file extension text in file thumbnail placeholder in file rectangle
@@ -382,7 +384,7 @@ mediaviewFileYellowCornerFg: ctpYellow // yellow file thumbnail placeholder corn
 mediaviewMenuBg: ctpSurface0 // context menu in Media Viewer background
 mediaviewMenuBgOver: ctpSurface1 // context menu item background with mouse over
 mediaviewMenuBgRipple: ctpSurface2 // context menu item ripple effect
-mediaviewMenuFg: windowFgActive // context menu item text
+mediaviewMenuFg: windowFg // context menu item text
 mediaviewPlaybackActive: ctpOverlay1 // video playback progress already played part
 mediaviewPlaybackActiveOver: ctpOverlay2 // video playback progress already played part with mouse over
 mediaviewPlaybackIconFg: mediaviewPlaybackActive // video playback controls icon
@@ -397,13 +399,13 @@ mediaviewTransparentBg: ctpRosewater // transparent filling part (when viewing a
 mediaviewTransparentFg: ctpMauve // another transparent filling part
 mediaviewVideoBg: imageBg // Media Viewer background when viewing a video in full screen
 membersAboutLimitFg: windowFg // text in channel members box about the limit (max 200 last members are shown)
-msgBotKbIconFg: windowFgActive // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
+msgBotKbIconFg: windowFg // bot inline keyboard button icon in the top-right corner (like in @vote bot when a poll is ready to be shared)
 msgBotKbOverBgAdd: ctpSurface1 // this is painted over a bot inline keyboard button (which has msgServiceBg background) when mouse is over that button
 msgBotKbRippleBg: ctpSurface2 // bot inline keyboard button ripple effect
 msgDateImgBg: ctpCrustTransparent // media message time bubble background (like time bubble in a sent photo) or file with thumbnail download icon circle background
 msgDateImgBgOver: ctpCrustTransparent // media message download icon circle background with mouse over (like file with thumbnail download icon)
 msgDateImgBgSelected: ctpSurface1Transparent // selected media message time bubble background
-msgDateImgFg: windowFgActive // media message time text (like time text in a sent photo)
+msgDateImgFg: windowFg // media message time text (like time text in a sent photo)
 msgFile1Bg: ctpBlue // blue shared links / files without image square thumbnail
 msgFile1BgDark: ctpBlue // blue shared files without image download circle background
 msgFile1BgOver: ctpBlue // blue shared files without image download circle background with mouse over
@@ -430,7 +432,7 @@ msgFileThumbLinkInFg: lightButtonFg // inbox media file message with thumbnail d
 msgFileThumbLinkInFgSelected: lightButtonFgOver // inbox selected media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFg: windowFg // outbox media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFgSelected: windowFg // outbox selected media file message with thumbnail download / open with button text
-msgImgReplyBarColor: windowFgActive // sticker message reply outline
+msgImgReplyBarColor: windowFg // sticker message reply outline
 msgInBg: ctpSurface0 // inbox message background
 msgInBgSelected: ctpSurface1 // inbox selected message background (and background of selected text in those messages)
 msgInDateFg: windowSubTextFg // inbox message time text
@@ -458,7 +460,7 @@ msgOutShadowSelected: msgInShadowSelected // outbox selected message shadow (bel
 msgSelectOverlay: ctpOverlay2Transparent // overlay which is filling the media parts of selected messages (like in selected photo message)
 msgServiceBg: ctpSurface0Transparent // service message background (like in a service message about group title being changed) (adjusted)
 msgServiceBgSelected: ctpSurface1 // service message selected text background (like in a service message about group title being changed) (adjusted)
-msgServiceFg: windowFgActive // service message text (like date dividers or service message about the group title being changed)
+msgServiceFg: windowFg // service message text (like date dividers or service message about the group title being changed)
 msgStickerOverlay: ctpOverlay2Transparent // overlay which is filling the selected sticker message
 msgWaveformInActive: ctpAccent // inbox voice message active waveform lines (like played part of currently playing voice message)
 msgWaveformInActiveSelected: ctpAccent // inbox selected voice message active waveform lines (like played part of currently playing voice message)
@@ -479,10 +481,11 @@ outlineButtonBg: windowBg // default left outlined button background (like share
 outlineButtonBgOver: ctpSurface0 // default left outlined button background with mouse over
 outlineButtonBgRipple: ctpSurface1 // default left outlined button ripple effect
 outlineButtonOutlineFg: ctpOverlay1 // default left outlined button left outline border
+overviewCheckBgActive: windowBgActive
 overviewCheckBg: ctpCrustTransparent // shared files / links checkbox background for not selected rows when some rows are selected
 overviewCheckBorder: windowFg // shared media round checkbox border
 overviewCheckFg: ctpCrust // shared files / links checkbox icon for not selected rows when some rows are selected
-overviewCheckFgActive: ctpCrust // shared files / links checkbox icon for selected rows
+overviewCheckFgActive: ctpControlFg // shared files / links checkbox icon for selected rows
 overviewPhotoSelectOverlay: ctpOverlay2Transparent // shared photos / videos / links fill for selected rows
 photoCropFadeBg: layerBg // avatar crop box fade background (when choosing a new photo in Settings or for a group)
 photoCropPointFg: ctpRosewaterTransparent // avatar crop box corner rectangles (when choosing a new photo in Settings or for a group)
@@ -493,7 +496,7 @@ profileStatusFgOver: windowSubTextFg // group members list in group profile user
 profileVerifiedCheckBg: ctpAccent // profile verified check icon background
 profileVerifiedCheckFg: ctpOnAccent // profile verified check icon tick
 radialBg: ctpCrustTransparent // default radial loader background (like in Media Viewer when loading a photo)
-radialFg: windowFgActive // default radial loader line (like in Media Viewer when loading a photo)
+radialFg: windowFg // default radial loader line (like in Media Viewer when loading a photo)
 reportSpamBg: windowBg // report spam panel background (like a non contact user writes your for the first time)
 reportSpamFg: windowFg // report spam panel text (when you send a report from that panel)
 searchedBarBg: ctpSurface0 // search results bar background (in chats list, contacts box..)
@@ -514,7 +517,7 @@ smallCloseIconFgOver: ctpSubtext1 // small X icon with mouse over
 statisticsChartActive: ctpSurface2Transparent // sides in footer of statistic charts
 statisticsChartInactive: ctpSurface0Transparent // inactive area in footer of statistic charts
 stickerPanDeleteBg: ctpCrustTransparent // delete X button background for custom sent stickers in stickers panel (legacy)
-stickerPanDeleteFg: windowFgActive // delete X button icon for custom sent stickers in stickers panel (legacy)
+stickerPanDeleteFg: windowFg // delete X button icon for custom sent stickers in stickers panel (legacy)
 stickerPreviewBg: ctpCrustTransparent // sticker and GIF preview background (when you press and hold on a sticker)
 titleBg: ctpSurface0 // custom window title background when window is inactive
 titleBgActive: titleBg // custom window title background when window is active
